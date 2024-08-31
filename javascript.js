@@ -21,12 +21,12 @@ const score =JSON.parse(localStorage.getItem('score')) ||
         
             let result='';
 
-        if(playerMove === 'Scissors'){
+        if(playerMove === 'scissors'){
         if(computerMove === 'rock'){
             result = 'You lose';
         }else if(computerMove === 'paper'){
             result='You Win';
-        }else if(computerMove === 'Scissors'){
+        }else if(computerMove === 'scissors'){
             result='Tie'
         }
           }
@@ -36,7 +36,7 @@ const score =JSON.parse(localStorage.getItem('score')) ||
             result = 'Tie';
         }else if(computerMove === 'paper'){
             result='You lose';
-        }else if(computerMove === 'Scissors'){
+        }else if(computerMove === 'scissors'){
             result='You Win'
         }
           }
@@ -46,7 +46,7 @@ const score =JSON.parse(localStorage.getItem('score')) ||
                 result = `You Win`;
             }else if(computerMove === 'paper'){
                 result='Tie';
-            }else if(computerMove === 'Scissors'){
+            }else if(computerMove === 'scissors'){
                 result='You lose'
             }
           }
